@@ -24,6 +24,7 @@ include_recipe "build-essential"
 
 pkgs = value_for_platform_family(
   "rhel" => %w{ expat-devel gettext-devel libcurl-devel openssl-devel perl-ExtUtils-MakeMaker zlib-devel },
+  "debian" => %w( libcurl4-openssl-dev gettext ),
   "default" => []
 )
 
